@@ -1,2 +1,2 @@
 Dedicado a mi familia y a todos
-aquellos ...
+aquellos que me apoyaron durante el camino

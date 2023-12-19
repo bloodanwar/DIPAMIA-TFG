@@ -8,6 +8,15 @@ Esta sección aborda la motivación del trabajo. Se trata de señalar la necesid
 
 En este capítulo debería introducirse el contexto disciplinar y tecnológico en el que se desarrolla el trabajo de modo que pueda entenderse con facilidad el ámbito y alcance del TFG. Puesto que un TFG no tiene que ser necesariamente un trabajo con aportes novedosos u originales, solo es necesario la inclusión de estado del arte cuando este contribuya a aclarar aspectos clave del TFG o se desee justificar la originalidad del trabajo realizado. Si la sección estado del arte es muy extensa, considera la opción de introducirla como un capítulo independiente.
 
+## Motivation
+Health is a problem that never can scape us, wether we want it or not, we get sick from time to time, and illneses are a main cause of 
+
+In today's world health and its studies have improved a lot. Nevertheless, the improvement must never stop, and helping this improvement is part of us as programmers and technicians. This improvement can often come as a part of studies and research on new technologies and innovations on old ones, and also it can come as the development of the structure behind the system itself. 
+The field of computer sience is an ever developing field, and new tecnologies emerge every day giving us oportunities to make the world a better place. The new hotness is Artificial Inteligence, and we thing we can use it to develop new tools that can help us. In this case we are using a type of artificial inteligence that 
+In this project we aim to tackle both fronts, we aim to develop a system that can help us recognize patterns in illnesses so they help specialists with their work, and also we want to create a tool for them to use so the system is less cluttered and 
+
+
+
 ## Redacción de la Memoria
 
 Durante la realización de la memoria del TFG es importante tener presente respetar la guía de estilo de la institución. Por tanto, el empleo de plantillas para un sistema de procesamiento de textos (por ejemplo, Word o LaTeX) puede requerir su adaptación cuando la plantilla mencionada no haya sido suministrada en la institución a la que se dirige el trabajo.

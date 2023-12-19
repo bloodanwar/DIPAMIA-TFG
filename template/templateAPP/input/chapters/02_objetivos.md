@@ -29,3 +29,20 @@ Junto con la definición de estos objetivos se puede especificar los requisitos 
 Al redactar el objetivo de un TFG se debe evitar confundir los medios con el fin. Así es habitual encontrarse con objetivos definidos en términos de las acciones (verbos) o tareas que será preciso realizar para llegar al verdadero objetivo. Sin embargo, a la hora de planificar el desarrollo del trabajo si es apropiado descomponer todo el trabajo en hitos y estos en tareas para facilitar dicha planificación.
 
 La categoría del objetivo planteado justifica modificaciones en la organización genérica de la memoria del trabajo. Así en el caso de estudios y validación de hipótesis el apartado de resultados y conclusiones debería incluir los resultados de experimentación y los comentarios de cómo dichos resultados validan o refutan la hipótesis planteada.
+
+# Objectives
+
+## O1: Obtención de los datos de movimiento a partir de una cámara RGB
+
+Vamos a tener en cuenta los distintos tipos de camaras a utilizar para poder procesar los datos, estas camaras tienen distintas capacidades y caracteristicas. Vamos a analizar las diferencias entre ellas y vamos a ver la forma en la que podemos hacer uso de sus datos.
+En nuestro caso vamos a usar camaras RGB, las cuales no tienen percepción de la profundidad por si mismas, por lo cual tenemos que investigar la forma de transcribir la profundidad a ellas.
+No solo es relevante la camara que usemos ya que el software que se use para procesar lo visto por la cmaara tambien es relevante. Por ello vamos a investigar las distintas formas de captura de datos y su procesado.
+## O2: Validación del sistema de obtención de datos para el análisis de movimiento en entornos clínicos
+
+En contraste con otros tipos de camara nuestra elección, la camara RGB, no es una camara con validación cientifica previa. Por esto tenemos que investigar como se puede hacer el proceso de validación de la camara y los datos que obtenemos de ella.
+Los datos necesitan ser validados ya no solo cientificamente 
+
+## O3: Definición de los datos a utilizar y su generalización para el entrenamiento de modelos de IA
+## O4: Comparación de diferentes métodos para el entrenamiento de modelos de IA para el diagnóstico de la patología del caso de estudio inicial
+## O5: Desarrollo de una herramienta para el entrenamiento de modelos de IA para el caso de estudio inicial
+## O6: Validación del sistema de diagnóstico para la patología del caso de estudio inicial
