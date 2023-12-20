@@ -18,11 +18,11 @@ TRABAJO FIN DE GRADO
 
 \vspace{1cm}
 
-Departamento de  \Department
+ \Department
 
 \vspace{0.25cm}
 
-Tecnología Específica de  \Technology
+ \Technology
 
 \vspace{0.25cm}
 
@@ -34,11 +34,11 @@ Tecnología Específica de  \Technology
 
 \vspace{0.50cm}
 
-Autor:  \Name
+ \Name
 
-Tutor Académico:  \Tutor
+ \Tutor
 
-Cotutor Académico:  \Cotutor
+ \Cotutor
 
 \flushright
 

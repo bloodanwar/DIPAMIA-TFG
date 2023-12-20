@@ -32,7 +32,7 @@ header-includes: |
   \renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
   \makeatletter
 
-  \usepackage[spanish]{babel}
+  \usepackage[english]{babel}
   \usepackage{appendix}
   \addto\captionsspanish{%
   \renewcommand\appendixname{Anexo}

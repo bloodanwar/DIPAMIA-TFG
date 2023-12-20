@@ -19,7 +19,7 @@ TRABAJO FIN DE GRADO
 
 \vspace{1cm}
 
-GRADO EN INGENIERÍA INFORMÁTICA
+
 
 \vspace{2.5cm}
 

@@ -21,7 +21,7 @@ tfg: deleteContainer
 	@echo "*********************************"
 	@echo "Compilando Trabajo Final de Grado"
 	@echo "*********************************"
-	-docker run -v "$(PWD)/templateAPP":/home/tfgii/templateAPP --name tfgii  felix.albertos/tfgii
+	-docker run -v "$(shell pwd)/templateAPP":/home/tfgii/templateAPP --name tfgii  felix.albertos/tfgii
 deleteContainer:
 	@echo "*******************"
 	@echo "Borrando contenedor"
