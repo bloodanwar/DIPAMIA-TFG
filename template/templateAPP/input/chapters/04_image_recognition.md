@@ -24,3 +24,11 @@ draw:
 en el main solo hace un bucle infinito con las dos funciones
 se definen los valores para el objeto de la pose
 usa cv2 para la captura del video
+
+
+
+
+-----------
+
+
+La función de convolución realiza el filtrado de los valores de píxel de una imagen, lo que se puede utilizar para aumentar su nitidez, difuminarla, detectar sus ejes u otros realces basados en el kernel. Los filtros se ut  ilizan para mejorar la calidad de la imagen de ráster al eliminar datos falsos o mejorar las entidades de los datos. Estos filtros de convolución se aplican a un kernel móvil o superpuesto (ventana o vecindad), como 3 x 3. Los filtros de convolución actúan calculando el valor de píxel en función de la ponderación de sus vecinos
