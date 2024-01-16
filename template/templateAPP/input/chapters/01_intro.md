@@ -1,8 +1,6 @@
 # Introduction
 
-## Motivation
-
-### How back pain affects health
+## How back pain affects health
 Health is a problem that never can escape us, whether we want it or not, we get sick from time to time, and illnesses are a main cause of discomfort in your day-to-day life, but for many people, it's not only a discomfort, many people have chronic ilneses that don't allow them to have a normal life, and they don't deserve it. As many experts see it two main causes of illness affect people in today's world, mental illness and back pain.
 
 As Gordon Waddell talks about in his book "The back pain revolution", back pain is a pervasive and often debilitating condition that affects millions of people worldwide, transcending age, occupation, and lifestyle. As one of the most common reasons for seeking medical attention, back pain poses a significant challenge to the well-being and functionality of individuals across diverse demographics. This book delves into the multifaceted nature of back pain, exploring its possible causes, far-reaching implications, and the profound impact it has on the daily lives of those who grapple with this condition.
@@ -19,7 +17,7 @@ Occupational demands and lifestyle choices significantly contribute to poor post
 
 This project will explore not only the physiological aspects of back pain but also its broader implications on society. By researching this condition, we aim to help the development of comprehensive strategies for prevention, management, and treatment. Through an understanding and research of back pain, we can empower individuals, healthcare professionals, and policymakers to collaborate in mitigating its impact and creating a healthier, more resilient society.
 
-### Mental issues and how they relate to posture
+## Mental issues and how they relate to posture
 
 This project will take part in a bigger research article related also with the importance of mental ilness in society.
 
@@ -31,7 +29,7 @@ The societal impact of mental illness also manifests in stigmatization, discrimi
 
 In the research this project takes part of, we aim to also stablish a link on posture and movement to the discovery and precention of mental health such as both we talked aboout, alzheimers and depression. There are articles that correlate mental health sympthomps to verval but also non verbal signs. Researchers have focused their attention on a visual and linguistic indications for assessing depression. This project introduces related work on facial features, audio features, body features, and Kinect-based rehabilitation training and detection methods in particular.
 
-### Improving the medical field
+## Improving the medical field
 
 Technology, particularly advancements in computer science, has played a crucial role in revolutionizing the medical field, enhancing patient care, and driving improvements in the healthcare sistem. One of the most notable contributions comes from the utilization of electronic health records, which have simplified the management and accessibility of patient information. EHRs enable doctors to access detailed and up-to-date patient records instantly, facilitating more informed decision-making and coordinated care across various medical departments. This not only improves the efficiency but also reduces medical errors wich lead to a better health care sistem overall.
 

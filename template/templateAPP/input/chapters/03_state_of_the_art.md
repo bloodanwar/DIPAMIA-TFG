@@ -62,9 +62,9 @@ Various technologies are employed for this purpose, each with its strengths and 
 Markerless motion capture relies on computer vision algorithms to track and reconstruct skeletal models without the need for physical markers. This approach offers more natural movement and is less invasive than marker-based systems, making it suitable for applications like entertainment, sports analysis, and healthcare. OpenPose, a 3D markerless motion capture technique that uses multiple synchronized video cameras to track human poses or skeletons from images. It has been shown to have an accuracy of 30 mm or less.
 
 
-## MediaPipe @Lugaresi2019Jun
+## MediaPipe 
 
-Now that we have established a bases on motion capture through cameras and tracking systems, we arrive at a very important part of the project, MediaPipe.
+Now that we have established a bases on motion capture through cameras and tracking systems, we arrive at a very important part of the project, MediaPipe. @Lugaresi2019Jun
 
 MediaPipe is an open-source framework developed by Google that provides a comprehensive solution for building real-time multimodal perceptual pipelines. It is designed to simplify the development of applications that involve various forms of sensor inputs, such as cameras and microphones. MediaPipe offers pre-built components and tools for tasks like hand tracking, face detection, pose estimation, and more.
 
@@ -86,4 +86,3 @@ Una vez entendido eso verás que hay 2 tipos de parámetros:
             - Abducción/aducción de la rodilla
             - Rotación interna/externa de la rodilla.
 
-## AI

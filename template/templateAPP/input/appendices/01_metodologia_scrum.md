@@ -1,57 +1,103 @@
 # Anexo 1 - Metodologia de trabajo Scrum
 
-We are going to use an Agile workflow based on scrum. Im going to be the developer and my turor is going to be the product owner.
+Scrum is an agile project management framework that helps teams deliver high-value products. It emphasizes iterative development, collaboration, and customer feedback. The process is organized into time-boxed iterations called sprints, typically lasting 2-4 weeks. Scrum includes roles like Scrum Master, Product Owner, and Development Team, as well as specific events like Sprint Planning, Daily Stand-ups, Sprint Review, and Sprint Retrospective.
 
-This workflow consists of bi weekly or monthly sprints in wich we are going to be able to stablish the tasks for the sprint. This workflow wont have more meetings than the sprint meetings due to the fact that i'm the only person working on the project, therefore  there is no need to do daily meetings fo stablish or split the work for the day. This is an adaptation of the clasic agile workflow in with we would have daily, sprint and project meetings in wich we would discuss the different aspects of the project.
+This is an altered version of the scrum methodology due to the fact that there are only two parties involved in this project, the developer and the product owner. Carlos will be the developer and Felix and David will take part as the product owners.
+When adapting Scrum for a single developer and a single Product Owner, the structure can be simplified while maintaining key principles. 
+Here's the modified version we are opting for:
+- Roles:
+  - Developer: This is the individual responsible for all aspects of the product's development, from design to implementation and testing. Carlos Rincón González
+  - Product Owner (PO): This person represents the stakeholders, defines the features, and prioritizes the work to maximize the product's value. Felix Albertos and David Carneros
+- Events:
+  - Sprint Planning: At the beginning of each sprint (a development iteration), the developer and PO collaborate to plan the work for the upcoming sprint. These events will occur once evert 2 to 4 weeks during the sprint meeting.
+  - Daily Check-in: The developer has a brief daily check-in to review progress and plan the next steps. This is an opportunity to adjust plans based on feedback or changing priorities. This is not a necesary step and it's mostly used as a method of self organization in the daily tasks for the developer
+  - Sprint Review: At the end of each sprint, the developer presents the completed work to the PO. They discuss what was achieved and any adjustments needed for future sprints. Same as with the sprint planning, this will take part as part of the sprint meeting.
+  - Sprint Retrospective: The developer reflects on the sprint, identifying what went well and what could be improved. This can be a brief self-assessment to enhance the development process. This will be a part of the sprint meeting as well.
 
-For this workflow we are going to use the 
--  *Explicar porque no hay dailyes  (es adaptado para solo 1 desarrollador)
+- Artifacts:
+  - Backlog: The Product Owner maintains a prioritized list of features and tasks, known as the backlog. The developer pulls items from the top of the backlog into each sprint.
+  - The initial product backlog will consist on all the objectives set for the project in the begining meeting. This objectives will be striped down into its crucial and more basic parts to be worked on and to develop a successfull project
+
+By simplifying the structure, a single developer can still benefit from Scrum's iterative and feedback-driven approach. The collaboration between the developer and product owner remains crucial for delivering valuable increments of the product.
+
+For the management and monitoring of the progect we will make use of a tool called Github
+
+For this workflow we are going to use the tool within GitHub called Github projects. GitHub Projects is a collaborative project management tool designed to enhance the organization and tracking of software development projects on the GitHub platform. It provides a visual interface that allows teams to plan, track, and manage their work efficiently. GitHub Projects utilizes the concept of boards, where tasks are represented as cards that can be moved between customizable columns, such as "Product Backlog", "Sprint Backlog", "In Progress", and "Done". This flexibility makes it adaptable to various project management methodologies, including Agile and Kanban. 
+Additionally, GitHub Projects integrates seamlessly with other GitHub features, such as code repositories and pull requests, providing a comprehensive ecosystem for collaborative software development, wich is precisely the reason why we chose to use it, as we hosted our project on github.
 - *** Explicar el porque de GitHub
 - **** Añadir product backlog inicial
 
-## Sprint 1 (20/09/2023 - 04/10/2023) - 
+## Sprint 1 (20/09/2023 - 04/10/2023) - First Meeting
 
-**Sprint meeting**
+- **Sprint meeting**
   - We stablish the bases of the project and the work methodology, also we stablish a final name and theme.
-**Sprint Tasks**
+- **Sprint Tasks**
   - Define the basics of the methodology and decide on a interface and a form to aply it
   - Create the github project and create the product backlog
 
-## Sprint 2 (04/10/2023 - 22/11/2023) 
+## Sprint 2 (04/10/2023 - 22/11/2023) Project definition and configuration
 
 **Sprint meeting**
   - Defining the project objectives and bulletpoints
-**Sprint Tasks**
-  - Define and finalize the objectives of the project
-  - Create the constitution project document.
-  - Creation of the project based on Felix's template
 
-## Sprint 3 (22/11/2023 - 05/12/2023) - Introduction and state of the art.
+**Sprint Tasks**
+  - Define and finalize the objectives of the project (3)
+  - Create the constitution project document. (2)
+  - Creation of the project based on Felix's template (1)
+
+**Sprint Retrospective**
+  - The template works properly and has been completely filed
+  - The project objectives seem clear and well defined
+
+## Sprint 3 (22/11/2023 - 05/12/2023) - Introduction.
 
 **Sprint meeting**
-  - We start discusions about the project information itself and how to make the project´s memory
-**Sprint Tasks**
-  - Research about the state of the art regarding the different methods of image recognition
-**Sprint Retrospective**
-  - We revised the progress and we saw that the Introduction was not started and the State of the art was starting to be researched but needed much more development.
+  - We start discusions about the project information itself and how to make the project´s memory.
+  - We decide to start developing the introduction of the project so it is usefull as a steping stone for the rest of the project.
 
-## Sprint 4 (05/12/2023  - 19/12/2023 )  - Deeper dive on Image recognition.
+**Sprint Tasks**
+  - Research on back pain related problems. (4)
+  - How mental isues afect and relate to posture. (3)
+  - How tecnology improves the medical field (3)
+
+**Sprint Retrospective**
+  - The Introduction has started successfuly but will need more work in the future.
+  - Introduction may be splitted into different sections in the future as it may need more work
+
+## Sprint 4 (05/12/2023  - 19/12/2023 )  - State of the art.
 
 **Sprint meeting**
-  - We agreed that the state of the art needed more develpement and we set ourselves on the path to research more about it
-  - Also we have to stablish the motivations and objectives more clearly and develop a clear explanation of them in the project memory.
-**Sprint Tasks**
-  - Research of the state of the art (4)
-  - Further explanation of the introduction (2)
-  - Rellenar las bases de la plantilla
-    - Config.yaml (Datos, idioma)
-    - Instrucciones en el el pdf del output (anexo1)
-    - Enviar esto a sprint 2/1
-    - traducir esto a ingles
-    - 
-**Sprint Retrospective**
+  - We agreed that the introduction art needed more development and we set ourselves on the path to research more about it in the future.
+  - At this point it was the time to start working on the state of the art.
+  - Also we had to stablish the motivations and objectives more clearly and develop a clear explanation of them in the project memory.
 
-## Sprint template ( 19/12/2023 -  )  - Titulo del sprint ( resumiendo el objetivo )  
+**Sprint Tasks**
+  - Further explanation of the introduction (1)
+  - Research of the state of the art (9)
+    - Types of cameras (4)
+    - Tracking methodology (3)
+    - Mediapipe definition (2)
+
+**Sprint Retrospective**
+  - **Aqui voy a poner lo que hablemos este sprint**
+
+## Sprint template ( 19/12/2023 - 16/01/2024 )  - Holiday Season Improvements 
+
+- **Sprint meeting**
+  - The previous sprint was successful in creating a beginning of a state of the art.
+  - this sprint will take part during the holiday season and therefor will be lighter
+  - we will use this time to further improve the work on the last sprints by improving the introduction and the state of the art research.
+
+- **Sprint Tasks**
+  - Research on the introduction (3)
+  - Research on the state of the art (3)
+  - Write compelling explanations and deeper knowledge (4)
+  
+- **Sprint Retrospective**
+  - **Aqui voy a poner lo que hablemos este sprint**
+
+
+## Sprint template ( 16/01/2024 -  )  - Titulo del sprint ( resumiendo el objetivo )  
 
 - **Sprint meeting**
   - Revision del sprint anterior
@@ -61,4 +107,3 @@ For this workflow we are going to use the
   - Tareas al sprint backlog (Peso)
 - **Sprint Retrospective**
   - Burndown Chart del sprint
-
