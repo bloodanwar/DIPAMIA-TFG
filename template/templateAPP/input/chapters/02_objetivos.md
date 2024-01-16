@@ -1,16 +1,32 @@
 # Objectives
 
-## O1: Obtención de los datos de movimiento a partir de una cámara RGB
+## O1: Data obenction via RGB camera
 
-Vamos a tener en cuenta los distintos tipos de camaras a utilizar para poder procesar los datos, estas camaras tienen distintas capacidades y caracteristicas. Vamos a analizar las diferencias entre ellas y vamos a ver la forma en la que podemos hacer uso de sus datos.
-En nuestro caso vamos a usar camaras RGB, las cuales no tienen percepción de la profundidad por si mismas, por lo cual tenemos que investigar la forma de transcribir la profundidad a ellas.
-No solo es relevante la camara que usemos ya que el software que se use para procesar lo visto por la cmaara tambien es relevante. Por ello vamos a investigar las distintas formas de captura de datos y su procesado.
-## O2: Validación del sistema de obtención de datos para el análisis de movimiento en entornos clínicos
+We are going to consider the different types of cameras to be used to process the data, these cameras have different capabilities and characteristics. We are going to analyze the differences between them and we are going to see the way in which we can make use of their data.
 
-En contraste con otros tipos de camara nuestra elección, la camara RGB, no es una camara con validación cientifica previa. Por esto tenemos que investigar como se puede hacer el proceso de validación de la camara y los datos que obtenemos de ella.
-Los datos necesitan ser validados ya no solo cientificamente 
+In our case we are going to use RGB cameras, which do not have depth perception by themselves, so we have to investigate how to transcribe depth to them.
 
-## O3: Definición de los datos a utilizar y su generalización para el entrenamiento de modelos de IA
-## O4: Comparación de diferentes métodos para el entrenamiento de modelos de IA para el diagnóstico de la patología del caso de estudio inicial
-## O5: Desarrollo de una herramienta para el entrenamiento de modelos de IA para el caso de estudio inicial
-## O6: Validación del sistema de diagnóstico para la patología del caso de estudio inicial
+Not only is the camera we use relevant, but the software used to process what is seen by the camera is also relevant. Therefore we are going to investigate the different ways of data capture and processing.
+
+## O2: Validation of the data acquisition system for motion analysis in a clinical setting
+
+In contrast to other types of cameras our choice, the RGB camera, is not a camera with previous scientific validation. This is why we have to investigate how the validation process of the camera and the data we obtain from it can be done.
+
+The data need to be validated not only scientifically, but also in terms of what parameters are going to be useful for the data model.
+
+## O3: Definition of the data to be used and their generalization for AI model training.
+
+The data that we aquire from the cameras must be processed before being used for the data model and training. Also this will help us determine what data is useful for future deployment of aplications so the load on the devices is not as hard.
+
+## O4: Comparison of different methods for training AI models for the diagnosis of the pathology of the initial case study
+
+AI models are not that new anymore, that means that there are a lot of methods and services that help you train data models, we are going to dive on the diferent aspects of ones and others that have diferent caracteristics between them. Ones may be more useful than others for our task.
+
+That also includes diferent methods of hosting these AI models and the research of diferent diseases to best choose the one that fits us the most and can be most of an improvement.
+
+## O5: Development of a tool for training AI models for the initial case study
+
+We not only aim to research everything in this field, we are going to develop a data model that fits our needs and gives us our desired outcome.
+
+## O6: Validation of the diagnostic system for the pathology of the initial case study.
+
