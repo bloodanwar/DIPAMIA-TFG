@@ -61,11 +61,11 @@ class FrameDraw:
                 for i, landmarks in enumerate(normalized_landmarks):
                     x = int(landmarks.x * self.width)
                     y = int(landmarks.y * self.height)
-                    
+                    z = float(landmarks.z)
                     if x < 0 or x > self.width or y < 0 or y > self.height:
                         continue
                     cv2.circle(frame, (x, y), self.joint_radius, self.joint_colors[i], -1)
-                    print (i,x,y)
+                    print (i,x,y,z)
                 
                 for connection in self.connections:
                     x0 = int(normalized_landmarks[connection[0]].x * self.width)
@@ -90,7 +90,7 @@ if __name__ == "__main__":
     cap.set(cv2.CAP_PROP_FPS, 30)
 
     frame_draw = FrameDraw(cap)
-    pose_detector = PoseDetector("heavy", min_detection_confidence, min_pose_presence_confidence, min_tracking_confidence, num_poses, output_segmentation_masks)
+        pose_detector = PoseDetector("heavy", min_detection_confidence, min_pose_presence_confidence, min_tracking_confidence, num_poses, output_segmentation_masks)
     
     while True:
         ret,frame = cap.read()

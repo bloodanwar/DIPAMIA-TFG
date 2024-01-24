@@ -38,3 +38,10 @@ Moreover, artificial intelligence (AI) and machine learning (ML) applications ha
 Telemedicine, another technological advancement fueled by computer science, has transformed healthcare accessibility. Using video consultations, remote monitoring, and digital communication, patients can receive medical advice and monitoring without the need for physical visits to hospitals. This has proven particularly important as of late, folowing the events of the global pandemic that hit us a couple of years ago, even tho other parts of the world had been using it prior to that. 
 
 This project aims to tackle the previous points and merge them into one, alowing us the benefits of telemedicine and artificial intelligence in the aims of creating a new diagnostic method for the biggest health issues of today's world. This is the goal, helping society to overcome what we see as the problems of the future and the present, that make life worse for so many  people on this world.
+
+
+
+#TODO
+    mini resumen de la propuesta
+    estructura del trabajo en cuanto a capitulos
+    grafico del desarrollo

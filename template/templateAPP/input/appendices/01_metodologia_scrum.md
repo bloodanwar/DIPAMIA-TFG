@@ -16,7 +16,7 @@ Here's the modified version we are opting for:
 
 - Artifacts:
   - Backlog: The Product Owner maintains a prioritized list of features and tasks, known as the backlog. The developer pulls items from the top of the backlog into each sprint.
-  - The initial product backlog will consist on all the objectives set for the project in the begining meeting. This objectives will be striped down into its crucial and more basic parts to be worked on and to develop a successfull project
+  - The initial product backlog will consist on all the objectives set for the project in the beginning meeting. This objective will be striped down into its crucial and more basic parts to be worked on and to develop a successfull project
 
 By simplifying the structure, a single developer can still benefit from Scrum's iterative and feedback-driven approach. The collaboration between the developer and product owner remains crucial for delivering valuable increments of the product.
 
@@ -37,10 +37,10 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
 
 ## Sprint 2 (04/10/2023 - 22/11/2023) Project definition and configuration
 
-**Sprint meeting**
+- **Sprint meeting**
   - Defining the project objectives and bulletpoints
 
-**Sprint Tasks**
+- **Sprint Tasks**
   - Define and finalize the objectives of the project (3)
   - Create the constitution project document. (2)
   - Creation of the project based on Felix's template (1)
@@ -54,7 +54,7 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
 **Sprint meeting**
   - We start discusions about the project information itself and how to make the project´s memory.
   - We decide to start developing the introduction of the project so it is usefull as a steping stone for the rest of the project.
-
+ 
 **Sprint Tasks**
   - Research on back pain related problems. (4)
   - How mental isues afect and relate to posture. (3)
@@ -100,9 +100,7 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
 ## Sprint template ( 16/01/2024 -  )  - Titulo del sprint ( resumiendo el objetivo )  
 
 - **Sprint meeting**
-  - Revision del sprint anterior
-  - Nuevas tareas
-  - Establecer objetivo del sprint
+  workflowy
 - **Sprint Tasks**
   - Tareas al sprint backlog (Peso)
 - **Sprint Retrospective**

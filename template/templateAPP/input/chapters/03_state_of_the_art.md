@@ -11,7 +11,7 @@ The popularization of RGB cameras can be attributed to their widespread use in v
 
 RGB cameras have become necessary in modern society, finding applications in industries ranging from healthcare and automotive to agriculture and surveillance. Their ability to faithfully capture and reproduce color has made them indispensable tools in a wide array of technological advancements, contributing significantly to the way we perceive and interact with the visual world. This is the precise reason we chose to evolve on this type of tecnology, to make our outcome, the aplication that relies on the data model, the most accesible posible to all the posible public of our aplication.
 
-****** Hacer un cuadro con estas camaras
+****** Hacer un cuadro con estas camaras // buscar citas para el uso de cada camara en concreto y apuntarlo #TODO
 
 - Infrared (IR) Cameras: Capture infrared light, which is beyond the visible spectrum. Used in night vision applications, thermal imaging, and scientific research.
 - Ultraviolet (UV) Cameras: Detect ultraviolet light, which is also outside the visible spectrum. Applied in scientific research, forensics, and some industrial processes.
@@ -28,17 +28,16 @@ RGB cameras and depth cameras, such as the Kinect sensor, serve distinct purpose
 
 One significant difference between RGB and depth cameras lies in their respective capabilities. RGB cameras are great in capturing detailed color information, making them suitable for applications like photography, video recording, and image analysis where color fidelity is essential. On the other hand, depth cameras are valuable in scenarios where understanding the spatial relationships and distances between objects is critical. This makes them ideal for applications like gesture recognition, virtual reality, and robotics, where depth perception plays a vital role. 
 
-Even more so, in the medical field, depth cameras have been used for many different purposes for years now. Here are some detailed examples of how depth cameras have been utilized in healthcare: @Chiu2019Jun
+Even more so, in the medical field, depth cameras have been used for many different purposes for years now. Here are some detailed examples of how depth cameras have been utilized in healthcare @Chiu2019Jun: 
 
-Rehabilitation and Physical Therapy: Depth cameras have been employed in rehabilitation settings to monitor and assist patients during physical therapy. Kinect-based systems can track body movements in real-time, providing quantitative data on a patient's range of motion, posture, and joint angles. Physical therapists can use this information to customize rehabilitation exercises and track the progress of patients recovering from injuries or surgeries. In some cases they can even give output on how a patient is doing a particular exercise and correct them in the case they are doing it wrongly. @Omelina2016
+- Rehabilitation and Physical Therapy: Depth cameras have been employed in rehabilitation settings to monitor and assist patients during physical therapy. Kinect-based systems can track body movements in real-time, providing quantitative data on a patient's range of motion, posture, and joint angles. Physical therapists can use this information to customize rehabilitation exercises and track the progress of patients recovering from injuries or surgeries. In some cases they can even give output on how a patient is doing a particular exercise and correct them in the case they are doing it wrongly @Omelina2016. 
 
-Surgical Planning and Navigation: Depth cameras have been integrated into surgical planning and navigation systems to enhance the precision of procedures. By capturing detailed 3D models of a patient's anatomy, surgeons can visualize internal structures with greater accuracy. This technology assists in preoperative planning, allowing surgeons to better understand the space between organs and plan the optimal approach for surgeries. This have been used in combination with x rays and in their replacement in cases where x rays are not a viable option. @LACHER201911
+- Surgical Planning and Navigation: Depth cameras have been integrated into surgical planning and navigation systems to enhance the precision of procedures. By capturing detailed 3D models of a patient's anatomy, surgeons can visualize internal structures with greater accuracy. This technology assists in preoperative planning, allowing surgeons to better understand the space between organs and plan the optimal approach for surgeries. This have been used in combination with x rays and in their replacement in cases where x rays are not a viable option @LACHER201911. 
 
-Prosthetics and Orthotics Design: Depth cameras have been applied in the design and fitting of prosthetics and orthotics. By capturing precise measurements of a patient's limbs in three dimensions, doctors can create customized prosthetics that offer a better fit and improved functionality. This personalized approach enhances patient comfort and overall effectiveness of prosthetic or orthopedic devices. @7130596
+- Prosthetics and Orthotics Design: Depth cameras have been applied in the design and fitting of prosthetics and orthotics. By capturing precise measurements of a patient's limbs in three dimensions, doctors can create customized prosthetics that offer a better fit and improved functionality. This personalized approach enhances patient comfort and overall effectiveness of prosthetic or orthopedic devices @7130596. 
 
 
--------------
-## Tracking (gracias david)
+## Tracking
 
 We not only need to talk about the way we are going to obtain the images for the purposes we are aming at. Tracking is also a very important aspect of the design and the decision that we have to make. Human movement tracking involves capturing and analyzing the motion of the human body, often represented through skeletal models based on joints. 
 

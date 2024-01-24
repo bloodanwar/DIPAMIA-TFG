@@ -1,5 +1,7 @@
 # Objectives
 
+añadir un objetivo global #TODO
+
 ## O1: Data obenction via RGB camera
 
 We are going to consider the different types of cameras to be used to process the data, these cameras have different capabilities and characteristics. We are going to analyze the differences between them and we are going to see the way in which we can make use of their data.
@@ -30,3 +32,4 @@ We not only aim to research everything in this field, we are going to develop a 
 
 ## O6: Validation of the diagnostic system for the pathology of the initial case study.
 
+ HEURISTICA DE EXPERTOS #TODO

@@ -7,3 +7,7 @@ https://datagen.tech/guides/data-training/model-training/
 https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
 
 https://www.tensorflow.org/guide
+
+
+
+redes neuronales trabajan entre 0 y 1
