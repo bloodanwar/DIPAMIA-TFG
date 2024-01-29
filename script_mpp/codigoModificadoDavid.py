@@ -2,6 +2,7 @@ import mediapipe as mp
 import cv2 
 import numpy as np
 import time
+import csv
 
 class PoseDetector:
 
@@ -55,7 +56,7 @@ class FrameDraw:
         self.connections = mp.solutions.pose.POSE_CONNECTIONS
 
 
-    def draw(self, frame, pose_landmarker_result):
+    def draw(self, frame, pose_landmarker_result,writer):
         if pose_landmarker_result.pose_landmarks:
             for normalized_landmarks in pose_landmarker_result.pose_landmarks:
                 for i, landmarks in enumerate(normalized_landmarks):
@@ -65,7 +66,7 @@ class FrameDraw:
                     if x < 0 or x > self.width or y < 0 or y > self.height:
                         continue
                     cv2.circle(frame, (x, y), self.joint_radius, self.joint_colors[i], -1)
-                    print (i,x,y,z)
+                    writer.writerow([i,landmarks.x,landmarks.y,landmarks.z])
                 
                 for connection in self.connections:
                     x0 = int(normalized_landmarks[connection[0]].x * self.width)
@@ -85,18 +86,23 @@ if __name__ == "__main__":
     num_poses = 1
     output_segmentation_masks = False
 
+    file = open('export.csv','w', newline='')
+    writer = csv.writer(file)
+    writer.writerow(['Point','x','y','z'])
+
     cap = cv2.VideoCapture(0)
     # set to 30 fps
     cap.set(cv2.CAP_PROP_FPS, 30)
 
     frame_draw = FrameDraw(cap)
-        pose_detector = PoseDetector("heavy", min_detection_confidence, min_pose_presence_confidence, min_tracking_confidence, num_poses, output_segmentation_masks)
+    pose_detector = PoseDetector("heavy", min_detection_confidence, min_pose_presence_confidence, min_tracking_confidence, num_poses, output_segmentation_masks)
     
     while True:
         ret,frame = cap.read()
         pose_landmarker_result = pose_detector.detectPose(frame)
-        frame_draw.draw(frame, pose_landmarker_result)
+        frame_draw.draw(frame, pose_landmarker_result,writer)
         if cv2.waitKey(1) & 0xFF == ord('q'):
+            file.close()
             break
 
 
