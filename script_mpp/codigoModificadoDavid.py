@@ -49,7 +49,7 @@ class FrameDraw:
         cv2.imshow('Video', frame)
 
         self.height, self.width, _ = frame.shape
-        self.joint_colors = [(0, 255, 0) if i < 11 else (255, 0, 0) if i in [11, 13, 21, 15, 19, 17, 23, 25, 27, 29, 31] else (0, 0, 255) for i in range(32)]
+        self.joint_colors = [(0, 255, 0) if i < 11 else (255, 0, 0) if i in [11, 13, 21, 15, 19, 17, 23, 25, 27, 29, 31] else (0, 0, 255) for i in range(33)]
         self.connection_color = (255,255,255)
         self.connection_thickness = 5
         self.joint_radius = 11
@@ -66,7 +66,8 @@ class FrameDraw:
                     if x < 0 or x > self.width or y < 0 or y > self.height:
                         continue
                     cv2.circle(frame, (x, y), self.joint_radius, self.joint_colors[i], -1)
-                    writer.writerow([i,landmarks.x,landmarks.y,landmarks.z])
+                    #writer.writerow([i,landmarks.x,landmarks.y,landmarks.z])
+                    
                 
                 for connection in self.connections:
                     x0 = int(normalized_landmarks[connection[0]].x * self.width)

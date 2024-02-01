@@ -2,6 +2,7 @@
 
 añadir un objetivo global #TODO
 
+
 ## O1: Data obtenction via RGB camera
 
 We are going to consider the different types of cameras to be used to process the data, these cameras have different capabilities and characteristics. We are going to analyze the differences between them and we are going to see how we can make use of their data.

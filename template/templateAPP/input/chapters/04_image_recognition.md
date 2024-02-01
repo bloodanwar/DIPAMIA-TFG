@@ -1,3 +1,30 @@
+# Methodology
+
+The first thing to do is to create a code that can be used to obtain the information we need. Fortunately we know that the are going to be using MediaPipe since the begining of the project wich made a straight shot for us at the time of developing this simple tool in wich we can iterate the different requirements.
+
+We start off by creating a module that obtains the image information from our camera and then we use mediaPipe to process the information. Using the Vision module we obtain the landmaks @landmarker. Landmarks are the name given to the visual representation of the human body joints that the model is able to track and reproduce.
+
+![Pose landmarks\label{Pose Landmark Numeration}](pose_landmarks_index.png){width=50%}
+
+For clarity, we colored different sections. The head section is colored green and the body is split into two sections, the right and the left hemispheres. Right side is red and the left is blue.
+
+At this point we draw the points that we obtained in the image in the picture frame and the conections between them that mediapipe also provides us. To draw the dots and lines, we have to normalize the data as mediapipe provides us with values in the range [1,-1] therefor we have to translate them into the canvas using the picture resolution as values for normalization.
+
+By doing this we get a simple code that draws in the frame the data that is obtained and processed by mediapipe.
+
+At this point we decide to start the straction of the data so we can start procesing it in our own way. As we have previously mentioned the data is of the range [1,-1] wich we can tecnicaly use but we shouldnt. We are going to normalize the data. In order to normalize the data decided that we are going to use the angles made by the joint conections. 
+The process would be:
+- Calculating the vector between joints A, B and C. 
+- Calculating the product and the magnitude of the vectors.
+- Applying the formula " cos(a) = (AB · BC) / (|AB| * |BC|) "
+- The arccos would give us the angle of the B landmark so we can normalize its data.
+
+
+
+
+---------------------------------- 
+## IGNORAR TODO LO SIGUIENTE SON ANOTACIONES
+
 Info recavada de mediapipe y el codigo de david
 
 
