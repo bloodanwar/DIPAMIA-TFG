@@ -1,4 +1,4 @@
-# Methodology
+# Image recognition and data extraction
 
 ## Landmarks and Joints
 The first thing to do is to create a code that can be used to obtain the information we need. Fortunately we know that the are going to be using MediaPipe since the begining of the project wich made a straight shot for us at the time of developing this simple tool in wich we can iterate the different requirements.
@@ -13,7 +13,7 @@ At this point we draw the points that we obtained in the image in the picture fr
 
 By doing this we get a simple code that draws in the frame the data that is obtained and processed by mediapipe.
 
-# Human body planes @BodyPlanes @humBodPlanes @cardinalPlanesBody.
+## Human body planes @BodyPlanes @humBodPlanes @cardinalPlanesBody.
 
 In anatomy, understanding the concept of anatomical planes and axes is fundamental for describing the orientation and movement of the human body. Anatomical planes are imaginary flat surfaces used to divide the body into sections, aiding in the visualization and communication of anatomical relationships. These planes serve as reference points for describing the position of structures and organs relative to each other. The three primary anatomical planes are the sagittal, frontal (coronal), and transverse (horizontal) planes.
 
@@ -33,7 +33,7 @@ The process would be:
 - Applying the formula " cos(a) = (AB · BC) / (|AB| * |BC|) "
 - The arccos would give us the angle of the B landmark so we can normalize its data.
 
-# Stepping stones
+## Stepping stones
 
 In terms of raw programming, I'm finding an issue with finding the normalization of a joint at a given time with the method previously used due to the fact that I cannot access the coordinates of the previous and next joint. For this precise reason, I proceed to create a new function that returns me a vector of the currently visible landmarks.
 This is key as we decided that an important point of reference that we could start measuring is when a step is taken, this is really important because since we don't have depth sensing cameras we cannot distinguish between floor and wall for example, we will have to use other much different approaches to know when a step is taken.
@@ -117,3 +117,9 @@ Tampoco veo la forma de como se puede ver los pasos.
         lo cambio a una clase para poder usar el self y almacenarlo ahí 
         ademas aprovecho a guardar en el self el contador de los pasos dados (porqué no)
         creo el getter para que me imprima los pasos dados a la hora de hacer el q
+        [
+            if (min(leftFeet_heights) > (max(self.prev_heights[1])) and
+                        max(rightFeet_heights) < (min(self.prev_heights[0]))):
+                    self.steps += 1
+                    print ("StepCounted")
+        ]

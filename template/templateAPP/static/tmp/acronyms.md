@@ -10,3 +10,11 @@
 
 : Trabajo Final de Grado
 
+<span id='ML'>ML</span>
+
+: Machine learning
+
+<span id='AI'>AI</span>
+
+: Artificial Intelligence
+

@@ -21,7 +21,7 @@ class StepCounter:
         self.lftFeet = [27, 29, 31]
         self.rgtFeet = [28, 30, 32]
 
-        self.errorMargin = 0.3
+        self.errorMargin = 0.1 #Error margin to avoid the jittering of the landmarks
 
     def count_steps(self, visible_landmarks,pose_landmarker):
        if set(self.lftFeet).issubset(set(visible_landmarks)) and set(self.rgtFeet).issubset(set(visible_landmarks)):
@@ -39,8 +39,8 @@ class StepCounter:
                     # Check if previous heights are available
             if self.prev_heights is not None:
                 # Check for exchange of height between feet
-                if (min(leftFeet_heights) > (max(self.prev_heights[1])+self.errorMargin) and
-                        max(rightFeet_heights) < (min(self.prev_heights[0])-self.errorMargin)):
+                if (min(leftFeet_heights) > (max(self.prev_heights[1])) and
+                        max(rightFeet_heights) < (min(self.prev_heights[0]))):
                     self.steps += 1
                     print ("StepCounted")
 

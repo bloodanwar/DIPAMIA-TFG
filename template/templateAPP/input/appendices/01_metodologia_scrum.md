@@ -68,6 +68,7 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
     - **Tsk_24.2** How mental health is affected by posture **(1.5)**
     - **Tsk_24.3** use cases of tecnology on the medical field **(1.5)**
     - **Tsk_24.4** ortography and references **(0.5)**
+
 ![Planing - Sprint 3\label{Sprint 3 - Planing}](Sprint3Planing.png){width=75%}
 
 - **Sprint Retrospective**
@@ -75,6 +76,7 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
   - The introduction may be split into different sections in the future as it may need more work
   
 - **Burndown Chart of the Sprint**
+
 ![Burnown Chart - Sprint 3\label{Sprint 3 - Burndown Chart}](Sprint3Burndown.png){width=75%}
 
 ## Sprint 4 (05/12/2023  - 19/12/2023 )  - State of the art.
@@ -85,14 +87,15 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
   - Also, we had to stablish the motivations and objectives more clearly and develop a clear explanation of them in the project memory.
 
 - **Sprint Tasks**
-  - Further explanation of the introduction **(1)**
-  - Research of the state of the art **(9)**
-    - Types of cameras **(4)**
-    - Tracking methodology **(3)**
-    - Mediapipe definition **(2)**
+  - **Tsk_31** Further explanation of the introduction **(1)**
+  - **Tsk_32** Research of the state of the art **(9)**
+    - **Tsk_32.1** Types of cameras **(4)**
+    - **Tsk_32.2** Tracking methodology **(3)**
+    - **Tsk_32.3** Mediapipe definition **(2)**
 
 - **Sprint Retrospective**
-  - **Aqui voy a poner lo que hablemos este sprint**
+  - The points to iron out are the references, the orthography and use of the third person instead of the first person.
+  - The sprint went well but i have to direct refference much more, even referencing every single example.
 
 ## Sprint template ( 19/12/2023 - 16/01/2024 )  - Holiday Season Improvements 
 
@@ -102,19 +105,30 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
   - we will use this time to further improve the work on the last sprints by improving the introduction and the state of the art research.
 
 - **Sprint Tasks**
-  - Research on the introduction (3)
-  - Research on the state of the art (3)
-  - Write compelling explanations and deeper knowledge (4)
+  - **Tsk_41** Research on the introduction **(3)**
+  - **Tsk_42** Research on the state of the art **(3)**
+  - **Tsk_41** Write compelling explanations and deeper knowledge **(4)**
   
 - **Sprint Retrospective**
-  - **Aqui voy a poner lo que hablemos este sprint**
+  - There was not much progress but we still did something in spite of the christmas vacation
+  - There still needs to be even more references and the way references are made at some points are not correct.
+  - We need to up the pace of the research so we can get into the real development of the ML model.
 
 
-## Sprint template ( 16/01/2024 -  )  - Titulo del sprint ( resumiendo el objetivo )  
+## Sprint template ( 16/01/2024 - 02/02/2024 )  - Titulo del sprint ( resumiendo el objetivo )  
 
 - **Sprint meeting**
-  workflowy
+  - we start to talk about the code and how we are going to aproach it.
+  - Normalization of the data is a very important part of this process so we have to research a way of doing this.
+  - This folowing weeks will set a base on some code to be used in image recognition and therefore we have to research on this very topic.
 - **Sprint Tasks**
-  - Tareas al sprint backlog (Peso)
+  - **Tsk_51** Burndown charts revised **(0.5)**
+  - **Tsk_52** Data extraction for the x,y,z to csv **(2)**
+  - **Tsk_53** Angle normalization of the coordinates **(5)** 
+  - **Tsk_54** Dection of steps taken **(4)**
+  - **Tsk_55** Research on body plane axes **(2)**
+
+
 - **Sprint Retrospective**
-  - Burndown Chart del sprint
+  - Angle normalization of the coordinates turned out to be harder than expected and is not finished.
+  - Step detection is nearly done but not finished. Needs to be finalized.
