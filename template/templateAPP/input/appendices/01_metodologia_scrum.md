@@ -30,8 +30,8 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
 - **Sprint meeting**
   - We stablish the bases of the project and the work methodology, and also we stablish a final name and theme.
 - **Sprint Tasks**
-  - Define the basics of the methodology and decide on an interface and a form to apply it
-  - Create the GitHub project and create the product backlog
+  - **Tsk_01** Define the basics of the methodology and decide on an interface and a form to apply it **(1)**
+  - **Tsk_02** Create the GitHub project and create the product backlog **(0.2)**
 
 ## Sprint 2 (04/10/2023 - 22/11/2023) Project definition and configuration
 
@@ -39,13 +39,19 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
   - Defining the project objectives and bullet points
 
 - **Sprint Tasks**
-  - Define and finalize the objectives of the project **(3)**
-  - Create the constitution project document. **(2)**
-  - Creation of the project based on Felix's template **(1)**
+  - **Tsk_11** Define and finalize the objectives of the project **(3)**
+    - **Tsk_11.1** Define the objectives **(1)**
+    - **Tsk_11.2** Write a description for each objective **(2)**
+  - **Tsk_12** Create the constitution project document. **(2)**
+  - **Tsk_13** Creation of the project based on Felix's template **(1)**
 
 - **Sprint Retrospective**
   - The template works properly and has been filled
   - The project objectives seem clear and well-defined
+
+- **Burndown Chart of the Sprint**
+
+![Burnown Chart - Sprint 2\label{Sprint 2 - Burndown Chart}](Sprint1Burndown.png){width=75%}
 
 ## Sprint 3 (22/11/2023 - 05/12/2023) - Introduction.
 
@@ -54,13 +60,22 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
   - We decided to start developing the introduction of the project so it is useful as a stepping stone for the rest of the project.
  
 - **Sprint Tasks**
-  - Research on back pain-related problems. **(4)**
-  - How mental issues affect and relate to posture. **(3)**
-  - How technology improves the medical field **(3)**
+  - **Tsk_21** Research on back pain-related problems. **(4)**
+  - **Tsk_22** Research How mental issues affect and relate to posture. **(3)**
+  - **Tsk_23** Research How technology improves the medical field **(3)**
+  - **Tsk_24** Explain the research **(5)**
+    - **Tsk_24.1** How back pain affects life **(1.5)**
+    - **Tsk_24.2** How mental health is affected by posture **(1.5)**
+    - **Tsk_24.3** use cases of tecnology on the medical field **(1.5)**
+    - **Tsk_24.4** ortography and references **(0.5)**
+![Planing - Sprint 3\label{Sprint 3 - Planing}](Sprint3Planing.png){width=75%}
 
 - **Sprint Retrospective**
   - The Introduction has started successfully but will need more work in the future.
   - The introduction may be split into different sections in the future as it may need more work
+  
+- **Burndown Chart of the Sprint**
+![Burnown Chart - Sprint 3\label{Sprint 3 - Burndown Chart}](Sprint3Burndown.png){width=75%}
 
 ## Sprint 4 (05/12/2023  - 19/12/2023 )  - State of the art.
 
