@@ -13,7 +13,9 @@ At this point we draw the points that we obtained in the image in the picture fr
 
 By doing this we get a simple code that draws in the frame the data that is obtained and processed by mediapipe.
 
-## Human body planes @BodyPlanes @humBodPlanes @cardinalPlanesBody.
+## Human body planes .
+
+@BodyPlanes @humBodPlanes @cardinalPlanesBody
 
 In anatomy, understanding the concept of anatomical planes and axes is fundamental for describing the orientation and movement of the human body. Anatomical planes are imaginary flat surfaces used to divide the body into sections, aiding in the visualization and communication of anatomical relationships. These planes serve as reference points for describing the position of structures and organs relative to each other. The three primary anatomical planes are the sagittal, frontal (coronal), and transverse (horizontal) planes.
 
@@ -28,6 +30,7 @@ The transverse plane, often referred to as the horizontal plane, divides the bod
 In our research, we are trying to establish a movement within these planes to be able to determine different parameters of the body's behavior and the direction of movement. For this precise reason, we are going to be using the data and we are going to normalize it in one of the different planes that we before mentioned using the angles of the joints for this process. The movement as described is considered to be an extension or a flexion seen by any of the axes of movement, therefore we can try to use this data to determine the direction of movement and the rate of it @Parklandcsit2012Apr. 
 
 The process would be:
+
 - Calculating the vector between joints A, B and C on a certain plane. 
 - Calculating the product and the magnitude of the vectors.
 - Applying the formula " cos(a) = (AB · BC) / (|AB| * |BC|) "

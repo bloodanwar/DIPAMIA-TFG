@@ -25,7 +25,7 @@ class StepCounter:
 
     def count_steps(self, visible_landmarks,pose_landmarker):
        if set(self.lftFeet).issubset(set(visible_landmarks)) and set(self.rgtFeet).issubset(set(visible_landmarks)):
-            print("countingSteps")
+            #print("countingSteps")
             leftFeet_heights = []
             rightFeet_heights = []
             for normalized_landmarks in pose_landmarker.pose_landmarks:
@@ -113,7 +113,7 @@ class FrameDraw:
                     if x < 0 or x > self.width or y < 0 or y > self.height:
                         continue
                     cv2.circle(frame, (x, y), self.joint_radius, self.joint_colors[i], -1)
-                        #writer.writerow([i,landmarks.x,landmarks.y,landmarks.z])
+                    writer.writerow([i,landmarks.x,landmarks.y,landmarks.z])
                     
                 
                 for connection in self.connections:
