@@ -12,7 +12,8 @@ def getVisibleLandmarks(pose_landmarker_result):
                     if landmarks.visibility > 0.5:  # Adjust visibility threshold as needed
                         visible_landmarks.append(i)
         return visible_landmarks
-        
+
+    
 class StepCounter:
     def __init__(self):
         
@@ -109,7 +110,7 @@ class FrameDraw:
                 for i, landmarks in enumerate(normalized_landmarks):
                     x = int(landmarks.x * self.width)
                     y = int(landmarks.y * self.height)
-                    z = float(landmarks.z)
+
                     if x < 0 or x > self.width or y < 0 or y > self.height:
                         continue
                     cv2.circle(frame, (x, y), self.joint_radius, self.joint_colors[i], -1)
