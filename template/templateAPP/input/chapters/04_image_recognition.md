@@ -13,7 +13,7 @@ At this point we draw the points that we obtained in the image in the picture fr
 
 By doing this we get a simple code that draws in the frame the data that is obtained and processed by mediapipe.
 
-## Human body planes .
+## Human body planes.
 
 @BodyPlanes @humBodPlanes @cardinalPlanesBody
 
@@ -45,84 +45,4 @@ We are going to start trying to evaluate the height of the different landmarks t
 
 During testing, we also noticed and tweaked the variables as we noticed visibility as a parameter part of the landmarker function, which will be very useful for the assessment of false positives in the joint visualization. At this point, we also implemented several different features such as the ability to determine which landmarks are visible at a certain point in time and also the ability to extract the data that we collect to a csv file for future processing and easier visualization.
 
----------------------------------- 
-## IGNORAR TODO LO SIGUIENTE SON ANOTACIONES
-
-Info recavada de mediapipe y el codigo de david
-
-
-El dodigo de david usa dos clases, una detecta la pose y la otra dibuja el frame
-
-pose:
-    Utiliza 3 modelos que están en una carpeta separados (pregunter por ellos)
-    utiliza la task de vision en media pipa para elegir los parametros basicos en el modelo.
-    inicializa el objeto con los valores pasados en la creación
-    para la detección de imagen usa la libreria de mp con la función image.
-    landmarker es la función que usa para la detección de los puntos
-        esto es lo que sale en la documentación de mediapipe y por eso lo referencian tanto en el paper.
-    devuelve el resultado de la pose del landmarker
-draw:
-    llama al objeto de la pose
-    toma como configuracion los colores para los parametros.
-    tiene unos condicionantes que colorean los joints dependiendo de la posición, como se ve en la imagen unos son la cara y otros son el lado izquierdo o derecho del cuerpo. (preguntar los enteros pero supongo que serán los numeros de los landmarks que ya están definidos por mp)
-    los dibuja usando cv2
-    notar que en este dibujado accede a .poselandmarks, lo cual parece ser la lista de los landmarks que hay en el frame. 
-    investigar ka función circle pero parece "simple" en su función
-    usa line para las conexiones haciendo referencia a las coords x e y de ambos puntos
-
-
-en el main solo hace un bucle infinito con las dos funciones
-se definen los valores para el objeto de la pose
-usa cv2 para la captura del video
-
-
-
-
------------
-
-
-La función de convolución realiza el filtrado de los valores de píxel de una imagen, lo que se puede utilizar para aumentar su nitidez, difuminarla, detectar sus ejes u otros realces basados en el kernel. Los filtros se ut  ilizan para mejorar la calidad de la imagen de ráster al eliminar datos falsos o mejorar las entidades de los datos. Estos filtros de convolución se aplican a un kernel móvil o superpuesto (ventana o vecindad), como 3 x 3. Los filtros de convolución actúan calculando el valor de píxel en función de la ponderación de sus vecinos
-
-
--------
-
-Viendo la forma en la que funciona el codigo no encuentro la forma de calcular dinamicamente el angulo de una joint
-Tampoco veo la forma de como se puede ver los pasos.
-    Pasos para stepcounter> 
-        Los pies son los landmarks [27,28,29,30,31,32] segun la guia.
-        Para detectar un paso ambos tienen que ser visibles para poder decir cual esta por encima
-        al hacer print de lo qye hay en  "pose_landmarker_result" veo que están tanto las coordenadas como la visibilidad
-        creo una clase que me enseñe los landmarks visibles en un punto determinado en el tiempo.
-
-        [def getVisibleLandmarks(pose_landmarker_result):
-        visible_landmarks = []
-        if pose_landmarker_result.pose_landmarks:  <---Copiado del modulo de dibujo
-            for normalized_landmarks in pose_landmarker_result.pose_landmarks:
-                for i, landmarks in enumerate(normalized_landmarks): 
-                    if landmarks.visibility > 0.5:  <----- implementar en el modelo general y jugar con el valor
-                        visible_landmarks.append(i)
-        return visible_landmarks]
-
-        lo muevo a una funcion porque no necesita ser una clase.
-        para hacer el stepcounter primero checkeo que los pies estan en un momento dado en la imagen siendo visibles
-        
-        [def stepCounter(visible_landmarks):
-            feet = [27,28,29,30,31,32]
-            if set(feet).issubset(set(visible_landmarks)):
-                print ("both feet")]
-        
-        una vez que he detectado los dos pies los separo para poder detectar pie izq de derecho para dar el paso
-        como vi imprimiendo el poseLandmarker antes, los landmarks tienen metidas las coordenadas
-        cuando el tobillo de uno de los lados sube por encima del otro es un "paso"
-        problema, hacer un limitador para que no cuente todo el rato el tobillo de encima y que solo cuente cuando haga un cambio de altura
-        implementar un rango de error porque el modelo es impreciso y el jitter cuenta pasos que no son.
-        las alturas previas las necesito guardar entre ejecuciones porque obviamente la altura no cambia en la misma snapshot
-        lo cambio a una clase para poder usar el self y almacenarlo ahí 
-        ademas aprovecho a guardar en el self el contador de los pasos dados (porqué no)
-        creo el getter para que me imprima los pasos dados a la hora de hacer el q
-        [
-            if (min(leftFeet_heights) > (max(self.prev_heights[1])) and
-                        max(rightFeet_heights) < (min(self.prev_heights[0]))):
-                    self.steps += 1
-                    print ("StepCounted")
-        ]
+## 

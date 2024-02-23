@@ -101,3 +101,5 @@ Una vez entendido eso verás que hay 2 tipos de parámetros:
             - Abducción/aducción de la rodilla
             - Rotación interna/externa de la rodilla.
 
+
+

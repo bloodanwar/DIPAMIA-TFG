@@ -69,8 +69,6 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
     - **Tsk_24.3** use cases of tecnology on the medical field **(1.5)**
     - **Tsk_24.4** ortography and references **(0.5)**
 
-![Planing - Sprint 3\label{Sprint 3 - Planing}](Sprint3Planing.png){width=75%}
-
 - **Sprint Retrospective**
   - The Introduction has started successfully but will need more work in the future.
   - The introduction may be split into different sections in the future as it may need more work
@@ -97,6 +95,8 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
   - The points to iron out are the references, the orthography and use of the third person instead of the first person.
   - The sprint went well but i have to direct refference much more, even referencing every single example.
 
+![Burnown Chart - Sprint 4\label{Sprint 4 - Burndown Chart}](Sprint4Burndown.png){width=75%}
+
 ## Sprint template ( 19/12/2023 - 16/01/2024 )  - Holiday Season Improvements 
 
 - **Sprint meeting**
@@ -113,6 +113,8 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
   - There was not much progress but we still did something in spite of the christmas vacation
   - There still needs to be even more references and the way references are made at some points are not correct.
   - We need to up the pace of the research so we can get into the real development of the ML model.
+
+![Burnown Chart - Sprint 5\label{Sprint 5 - Burndown Chart}](Sprint5Burndown.png){width=75%}
 
 
 ## Sprint template ( 16/01/2024 - 02/02/2024 )  - Titulo del sprint ( resumiendo el objetivo )  
