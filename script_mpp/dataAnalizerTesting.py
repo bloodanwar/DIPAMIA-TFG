@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as plt
 
 # Define the 3D points
 points = np.array([[0.434, 0.083, -0.356], [0.449, 0.07, -0.328],[0.462, 0.07, -0.328],
