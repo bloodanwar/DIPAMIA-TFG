@@ -32,7 +32,7 @@ Once we have the data we need, we can analyze it.
 
 the first step we took is a look on the body planes that we already talked about before. 
 
-https://copyprogramming.com/howto/translate-image-orientation-into-axial-sagittal-or-coronal-plane
+<!-- https://copyprogramming.com/howto/translate-image-orientation-into-axial-sagittal-or-coronal-plane
 https://teachmeanatomy.info/the-basics/anatomical-terminology/planes/
 https://dicomiseasy.blogspot.com/2013/06/getting-oriented-using-image-plane.html
-https://www.youtube.com/watch?v=TWdN9TTQis4
+https://www.youtube.com/watch?v=TWdN9TTQis4 -->
