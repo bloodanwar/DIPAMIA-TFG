@@ -1,12 +1,13 @@
-# State of the art
+# State of the art.
 
 To know what can be done regarding our interests, we must look at what has already been done so far, so we don't waste our time doing something already done by someone else and also so we can use that research as a base to further improve our understanding and our work. 
 Because of this, we are going to be looking at the state of the art on camera technologies, methods of extracting the data and different models of artificial intelligence.
 
-## Cameras @galal2016analytical
+## Cameras. 
 
 RGB cameras, short for Red, Green, and Blue cameras, are imaging devices that capture color information by utilizing three primary color channels: red, green, and blue. These cameras mimic the way human vision perceives color by combining these three channels in varying intensities to produce a wide spectrum of colors. Each pixel in the image sensor of an RGB camera contains three sub-pixels, each sensitive to one of the three primary colors. The combination of these sub-pixels allows the camera to capture and reproduce a full range of colors, making RGB cameras essential for applications where color fidelity is crucial.
 
+As told in the history of cameras by Amr Mohame @galal2016analytical.
 The popularization of RGB cameras can be attributed to their widespread use in various fields. In consumer electronics, RGB cameras are a key component of smartphones, digital cameras, and webcams, enabling users to capture high-quality and realistic images. In the field of entertainment, RGB cameras play a key role in film and television production, making accurate color representation for a more immersive viewing experience. Even more so, RGB cameras are extensively employed in computer vision applications, such as facial recognition, object detection, and augmented reality, where precise color information is vital for accurate analysis and interpretation. This is the field we are going to be using them in, but as we will see, there are more complications to be dealt with when using RGB cameras in the medical field.
 
 RGB cameras have become necessary in modern society, finding applications in industries ranging from healthcare and automotive to agriculture and surveillance. Their ability to faithfully capture and reproduce color has made them indispensable tools in a wide array of technological advancements, contributing significantly to the way we perceive and interact with the visual world. This is the precise reason we chose to evolve on this type of technology, to make our outcome, the application that relies on the data model, the most accessible possible to all the possible public of our application.
@@ -36,7 +37,7 @@ Even more so, in the medical field, depth cameras have been used for many differ
 - Prosthetics and Orthotics Design: Depth cameras have been applied in the design and fitting of prosthetics and orthotics. By capturing precise measurements of a patient's limbs in three dimensions, doctors can create customized prosthetics that offer a better fit and improved functionality. This personalized approach enhances patient comfort and the overall effectiveness of prosthetic or orthopedic devices @7130596. 
 
 
-## Tracking
+## Tracking.
 
 We not only need to talk about the way we are going to obtain the images for the purposes we are aiming at. Tracking is also a very important aspect of the design and the decision that we have to make. Human movement tracking involves capturing and analyzing the motion of the human body, often represented through skeletal models based on joints @huang2002model. 
 
@@ -58,11 +59,11 @@ Various technologies are employed for this purpose, each with its strengths and 
 
 - Markerless Motion Capture @mundermann2006evolution: Markerless motion capture relies on computer vision algorithms to track and reconstruct skeletal models without the need for physical markers. This approach offers more natural movement and is less invasive than marker-based systems, making it suitable for applications like entertainment, sports analysis, and healthcare. OpenPose is a 3D markerless motion capture technique that uses multiple synchronized video cameras to track human poses or skeletons from images. It has been shown to have an accuracy of 30 mm or less.
 
-## Machine Learning Algorithms
+## Machine Learning Algorithms.
 
 Machine learning is the practice of instructing machines on how to manage data more effectively. When it becomes challenging to extract information directly from data, machine learning techniques are applied. The increasing availability of datasets has led to a growing demand for machine learning across various industries, where it is used to extract pertinent information. The primary objective of machine learning is to enable machines to learn autonomously from data, a topic that has attracted extensive research from mathematicians and programmers seeking solutions for handling large datasets.
 
-In Azure's words @AzureML: "Machine learning is an application of AI. It’s the process of using mathematical models of data to help a computer learn without direct instruction. This enables a computer system to continue learning and improving on its own, based on experience.
+In an article by Azure they say@AzureML: "Machine learning is an application of AI. It’s the process of using mathematical models of data to help a computer learn without direct instruction. This enables a computer system to continue learning and improving on its own, based on experience.
 One way to train a computer to mimic human reasoning is to use a neural network, which is a series of algorithms that are modeled after the human brain. The neural network helps the computer system achieve AI through deep learning. This close connection is why the idea of AI vs. machine learning is really about the ways that AI and machine learning work together."
 
 Machine learning employs a variety of algorithms to address data-related challenges. Data scientists emphasize that there isn't a single, universally optimal algorithm for every problem. The choice of algorithm depends on factors such as the problem type, the number of variables, and the most suitable model. Here's a brief overview of some commonly used machine learning algorithms @MLAlg @Bonaccorso_2018: 
@@ -77,29 +78,14 @@ Machine learning employs a variety of algorithms to address data-related challen
 
 These of course are not all the Machine Learning algorithms, but they are some of the most used. Machine learning is an ever-evolving field and with recent developments in the AI world, there is sure to be a huge influx of new ideas and changes to the field that will surely guide the path to improvements in Machine Learning.
 
-## MediaPipe 
+## MediaPipe.
 
-Now that we have established a basis for motion capture through cameras and tracking systems and we talked briefly about what is machine learning, we have arrived at a very important part of the project, MediaPipe. @Lugaresi2019Jun
+Now that we have established a basis for motion capture through cameras and tracking systems and we talked briefly about what is machine learning, we have arrived at a very important part of the project, MediaPipe @Lugaresi2019Jun. 
 
 MediaPipe is an open-source framework developed by Google that provides a comprehensive solution for building real-time multimodal perceptual pipelines. It is designed to simplify the development of applications that involve various forms of sensor inputs, such as cameras and microphones. MediaPipe offers pre-built components and tools for tasks like hand tracking, face detection, pose estimation, and more.
 
 MediaPipe provides a solution for human tracking through its Pose module, which is designed to estimate the poses of multiple people in real-time. This module can be used for applications such as fitness tracking, gesture recognition, and augmented reality experiences. It uses a pre-trained machine learning model for pose estimation. This model is trained on a large dataset of annotated images to learn the key points (joints) of the human body. The model predicts the positions of specific joints on the human body, typically including key points like the nose, shoulders, elbows, wrists, hips, knees, and ankles. These landmarks form a skeletal representation of the human pose.
 
 The detected pose landmarks are then used as input data in a graph-based processing pipeline. Each joint becomes a node in the graph, and the connections between the joints define the edges. This structure enables efficient processing and tracking of human poses. It is optimized for real-time performance, allowing the pose estimation model to process video streams or camera input in real-time. This is crucial for applications where low-latency tracking is required such as ours.
-
-## Data extraction and compilation 
-
-Análisis de movimiento
-Lo primero que deberías entender aquí porque te va a ser muy necesario es el ciclo de la marcha humana, junto con sus fases.
-Una vez entendido eso verás que hay 2 tipos de parámetros:
-    Parámetros espacio-temporales
-        Aquí los espacio-temporales que son algunos como longitud de paso, longitud de zancada, tiempo de paso, tiempo de doble apoyo, etc.
-    Parámetros cinemáticos
-        Para entender estos primero debes entender que el cuerpo está dividido en 3 planos: Sagital, transversal y frontal.
-        Con esos planos se pueden obtener los parámetros cinemáticos (ángulos) de las diferentes articulaciones. Por ejemplo:
-            - Flexion/extension de la rodilla
-            - Abducción/aducción de la rodilla
-            - Rotación interna/externa de la rodilla.
-
 
 

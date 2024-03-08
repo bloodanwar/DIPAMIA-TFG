@@ -1,4 +1,4 @@
-# Anexo 1 - Metodologia de trabajo Scrum
+# Anexo 1 - Metodologia de trabajo Scrum.
 
 Scrum is an agile project management framework that helps teams deliver high-value products. It emphasizes iterative development, collaboration, and customer feedback. The process is organized into time-boxed iterations called sprints, typically lasting 2-4 weeks. Scrum includes roles like Scrum Master, Product Owner, and Development Team, as well as specific events like Sprint Planning, Daily Stand-ups, Sprint Review, and Sprint Retrospective.
 
@@ -22,10 +22,10 @@ By simplifying the structure, a single developer can still benefit from Scrum's 
 
 For the management and monitoring of the project, we will make use of a tool called GitHubFor this workflow, we are going to use the tool within GitHub called Github projects. GitHub Projects is a collaborative project management tool designed to enhance the organization and tracking of software development projects on the GitHub platform. It provides a visual interface that allows teams to plan, track, and manage their work efficiently. GitHub Projects utilizes the concept of boards, where tasks are represented as cards that can be moved between customizable columns, such as "Product Backlog", "Sprint Backlog", "In Progress", and "Done". This flexibility makes it adaptable to various project management methodologies, including Agile and Kanban. 
 Additionally, GitHub Projects integrates seamlessly with other GitHub features, such as code repositories and pull requests, providing a comprehensive ecosystem for collaborative software development, which is precisely the reason why we chose to use it, as we hosted our project on GitHub.
-- *** Explicar el porque de GitHub
-- **** Añadir product backlog inicial
 
-## Sprint 1 (20/09/2023 - 04/10/2023) - First Meeting
+- **** #TODO Añadir product backlog inicial
+
+## Sprint 1 (20/09/2023 - 04/10/2023) - First Meeting.
 
 - **Sprint meeting**
   - We stablish the bases of the project and the work methodology, and also we stablish a final name and theme.
@@ -33,7 +33,7 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
   - **Tsk_01** Define the basics of the methodology and decide on an interface and a form to apply it **(1)**
   - **Tsk_02** Create the GitHub project and create the product backlog **(0.2)**
 
-## Sprint 2 (04/10/2023 - 22/11/2023) Project definition and configuration
+## Sprint 2 (04/10/2023 - 22/11/2023) Project definition and configuration.
 
 - **Sprint meeting**
   - Defining the project objectives and bullet points
@@ -82,7 +82,7 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
 - **Sprint meeting**
   - We agreed that the introduction art needed more development and we set ourselves on the path to research more about it in the future.
   - At this point, it was time to start working on the state of the art.
-  - Also, we had to stablish the motivations and objectives more clearly and develop a clear explanation of them in the project memory.
+  - Also, we had to establish the motivations and objectives more clearly and develop a clear explanation of them in the project memory.
 
 - **Sprint Tasks**
   - **Tsk_31** Further explanation of the introduction **(1)**
@@ -97,7 +97,7 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
 
 ![Burnown Chart - Sprint 4\label{Sprint 4 - Burndown Chart}](Sprint4Burndown.png){width=75%}
 
-## Sprint template ( 19/12/2023 - 16/01/2024 )  - Holiday Season Improvements 
+## Sprint 5 ( 19/12/2023 - 16/01/2024 )  - Holiday Season Improvements. 
 
 - **Sprint meeting**
   - The previous sprint was successful in creating a beginning of a state of the art.
@@ -117,20 +117,77 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
 ![Burnown Chart - Sprint 5\label{Sprint 5 - Burndown Chart}](Sprint5Burndown.png){width=75%}
 
 
-## Sprint template ( 16/01/2024 - 02/02/2024 )  - Titulo del sprint ( resumiendo el objetivo )  
+## Sprint 6 ( 16/01/2024 - 02/02/2024 )  - Body planes and projections.
 
 - **Sprint meeting**
   - we start to talk about the code and how we are going to aproach it.
   - Normalization of the data is a very important part of this process so we have to research a way of doing this.
   - This folowing weeks will set a base on some code to be used in image recognition and therefore we have to research on this very topic.
+
 - **Sprint Tasks**
   - **Tsk_51** Burndown charts revised **(0.5)**
-  - **Tsk_52** Data extraction for the x,y,z to csv **(2)**
-  - **Tsk_53** Angle normalization of the coordinates **(5)** 
-  - **Tsk_54** Dection of steps taken **(4)**
-  - **Tsk_55** Research on body plane axes **(2)**
+  - **Tsk_52** Data extraction for the x,y,z coordinates **(2)**
+  - **Tsk_53** Creating a first script that uses mediapipe **(6)**
+  - **Tsk_54** Research on body plane axes **(5)**
+
+
+- **Sprint Retrospective**
+  - Planes and projections are created from the coordinates obtained from mediapipe
+  - The code works properly but needs more development
+
+![Burnown Chart - Sprint 6\label{Sprint 6 - Burndown Chart}](Sprint6Burndown.png){width=75%}
+
+## Sprint 7 (  02/02/2024 - 23/02/2024 )  - Big steps into the code.
+
+- **Sprint meeting**
+  - we created a baseline code that extracts the data from the camera, we have to iterate and expand on this
+  - we have to extract the data to csv in order to be processed
+  - the code development has to continue by experimenting with the coordinates and seeing them change and what data we can extract from them
+
+- **Sprint Tasks**
+  - **Tsk_61** Data extraction for the x,y,z to csv **(7)**
+  - **Tsk_62** Angle normalization of the coordinates **(9)** 
+  - **Tsk_63** Dection of steps taken **(12)**
 
 
 - **Sprint Retrospective**
   - Angle normalization of the coordinates turned out to be harder than expected and is not finished.
   - Step detection is nearly done but not finished. Needs to be finalized.
+  - Spent a lot of time in code development but left aside the document and that is not good.
+  - focused on a visual representation of the data which is not at all relevant for us.
+
+  ![Burnown Chart - Sprint 7\label{Sprint 7 - Burndown Chart}](Sprint7Burndown.png){width=75%}
+
+## Sprint 8 ( 16/01/2024 - 02/02/2024 )  - Changes to the code and angles.
+
+- **Sprint meeting**
+  - have to fix the remaining problems on the document as they have been ignored for too long
+  - the previous sprint was not very productive as the code took too much time and was way too complex
+  - bring back to the beginning and start from scratch the code with a new focus
+  - focus on the data extraction being correct and then proceed to angles and if we have enough time, distances.
+
+- **Sprint Tasks**
+  - **Tsk_71** Chapter 2 revised **(1)**
+  - **Tsk_72** Annotations and titles corrected **(1)**
+  - **Tsk_73** Recreate the data extraction algorithm using Pandas **(1)**
+  - **Tsk_74** Angle extraction of the coordinates **(10)** 
+  - **Tsk_75** Research for chapter 5 **(3)**
+  - **Tsk_76** Creation of distance measuring algorithm **(6)**
+
+
+- **Sprint Retrospective**
+  - 
+
+![Burnown Chart - Sprint 8\label{Sprint 8 - Burndown Chart}](Sprint8Burndown.png){width=75%}
+
+## Sprint template ( 16/01/2024 - 02/02/2024 )  - Titulo del sprint ( resumiendo el objetivo )  
+
+- **Sprint meeting**
+  - 
+
+- **Sprint Tasks**
+  - **Tsk_81** **()**
+
+
+- **Sprint Retrospective**
+  - 
