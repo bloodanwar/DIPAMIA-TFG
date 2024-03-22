@@ -158,7 +158,7 @@ Additionally, GitHub Projects integrates seamlessly with other GitHub features, 
 
   ![Burnown Chart - Sprint 7\label{Sprint 7 - Burndown Chart}](Sprint7Burndown.png){width=75%}
 
-## Sprint 8 ( 16/01/2024 - 02/02/2024 )  - Changes to the code and angles.
+## Sprint 8 ( 23/02/2024 - 08/03/2024 )  - Changes to the code and angles.
 
 - **Sprint meeting**
   - have to fix the remaining problems on the document as they have been ignored for too long
