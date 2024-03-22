@@ -1,9 +1,9 @@
-# State of the art.
+# State of the art
 
 To know what can be done regarding our interests, we must look at what has already been done so far, so we don't waste our time doing something already done by someone else and also so we can use that research as a base to further improve our understanding and our work. 
 Because of this, we are going to be looking at the state of the art on camera technologies, methods of extracting the data and different models of artificial intelligence.
 
-## Cameras. 
+## Cameras
 
 RGB cameras, short for Red, Green, and Blue cameras, are imaging devices that capture color information by utilizing three primary color channels: red, green, and blue. These cameras mimic the way human vision perceives color by combining these three channels in varying intensities to produce a wide spectrum of colors. Each pixel in the image sensor of an RGB camera contains three sub-pixels, each sensitive to one of the three primary colors. The combination of these sub-pixels allows the camera to capture and reproduce a full range of colors, making RGB cameras essential for applications where color fidelity is crucial.
 
@@ -37,7 +37,7 @@ Even more so, in the medical field, depth cameras have been used for many differ
 - Prosthetics and Orthotics Design: Depth cameras have been applied in the design and fitting of prosthetics and orthotics. By capturing precise measurements of a patient's limbs in three dimensions, doctors can create customized prosthetics that offer a better fit and improved functionality. This personalized approach enhances patient comfort and the overall effectiveness of prosthetic or orthopedic devices @7130596. 
 
 
-## Tracking.
+## Tracking
 
 We not only need to talk about the way we are going to obtain the images for the purposes we are aiming at. Tracking is also a very important aspect of the design and the decision that we have to make. Human movement tracking involves capturing and analyzing the motion of the human body, often represented through skeletal models based on joints @huang2002model. 
 
@@ -59,7 +59,7 @@ Various technologies are employed for this purpose, each with its strengths and 
 
 - Markerless Motion Capture @mundermann2006evolution: Markerless motion capture relies on computer vision algorithms to track and reconstruct skeletal models without the need for physical markers. This approach offers more natural movement and is less invasive than marker-based systems, making it suitable for applications like entertainment, sports analysis, and healthcare. OpenPose is a 3D markerless motion capture technique that uses multiple synchronized video cameras to track human poses or skeletons from images. It has been shown to have an accuracy of 30 mm or less.
 
-## Machine Learning Algorithms.
+## Machine Learning Algorithms
 
 Machine learning is the practice of instructing machines on how to manage data more effectively. When it becomes challenging to extract information directly from data, machine learning techniques are applied. The increasing availability of datasets has led to a growing demand for machine learning across various industries, where it is used to extract pertinent information. The primary objective of machine learning is to enable machines to learn autonomously from data, a topic that has attracted extensive research from mathematicians and programmers seeking solutions for handling large datasets.
 
@@ -78,7 +78,7 @@ Machine learning employs a variety of algorithms to address data-related challen
 
 These of course are not all the Machine Learning algorithms, but they are some of the most used. Machine learning is an ever-evolving field and with recent developments in the AI world, there is sure to be a huge influx of new ideas and changes to the field that will surely guide the path to improvements in Machine Learning.
 
-## MediaPipe.
+## MediaPipe
 
 Now that we have established a basis for motion capture through cameras and tracking systems and we talked briefly about what is machine learning, we have arrived at a very important part of the project, MediaPipe @Lugaresi2019Jun. 
 

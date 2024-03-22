@@ -1,6 +1,6 @@
-# Image recognition and data extraction.
+# Image recognition and data extraction
 
-## Landmarks and Joints.
+## Landmarks and Joints
 The first thing to do is to create a code that can be used to obtain the information we need. Fortunately we know that the are going to be using MediaPipe since the begining of the project wich made a straight shot for us at the time of developing this simple tool in wich we can iterate the different requirements.
 
 We start off by creating a module that obtains the image information from our camera and then we use mediaPipe to process the information. Using the Vision module we obtain the landmaks @landmarker. Landmarks are the name given to the visual representation of the human body joints that the model is able to track and reproduce.
@@ -13,7 +13,7 @@ At this point, we draw the points that we obtained in the image in the picture f
 
 By doing this we get a simple code that draws in the frame the data that is obtained and processed by mediapipe.
 
-## Human body planes.
+## Human body planes
 
 There are numerous different papers that talk about ways in which we can study the human body analytically. The biggest part of the information came from medical articles that talk about how we can divide the body as if we took a photo from a different side @BodyPlanes @humBodPlanes @cardinalPlanesBody.
 
@@ -30,7 +30,7 @@ The transverse plane, often referred to as the horizontal plane, divides the bod
 In our research, we are trying to establish a movement within these planes to be able to determine different parameters of the body's behavior and the direction of movement. For this precise reason, we are going to be using the data and we are going to normalize it in one of the different planes that we before mentioned using the angles of the joints for this process. The movement as described is considered to be an extension or a flexion seen by any of the axes of movement, therefore we can try to use this data to determine the direction of movement and the rate of it @Parklandcsit2012Apr. 
 
 
-## Stepping stones.
+## Stepping stones
 
 In terms of raw programming, I'm finding an issue with finding the normalization of a joint at a given time with the method previously used due to the fact that I cannot access the coordinates of the previous and next joint. For this precise reason, I proceed to create a new function that returns me a vector of the currently visible landmarks.
 This is key as we decided that an important point of reference that we could start measuring is when a step is taken, this is really important because since we don't have depth sensing cameras we cannot distinguish between floor and wall for example, we will have to use other much different approaches to know when a step is taken.

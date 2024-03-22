@@ -1,10 +1,10 @@
 import mediapipe as mp
 import cv2 
 import numpy as np
-import time
 import sys
-import csv
 import matplotlib.pyplot as plt
+import pandas as pd
+import os
 
 class PoseDetector:
 
@@ -79,26 +79,30 @@ class FrameDraw:
         cv2.imshow('Video', frame)
 
 
+class Exporter:
+    def __init__(self, filename):
+        self.filename = filename
+        self.data = []
 
-class exporter:
-    def __init__(self, file):
-        self.counter = 0
-        self.defVal = np.nan
-        self.writer = csv.writer(file)
+        # Generate column names
+        columns = []
+        for i in range(33):
+            columns.append(f"Joint_{i}_X")
+            columns.append(f"Joint_{i}_Y")
+            columns.append(f"Joint_{i}_Z")
+        self.columns = columns
 
     def newline(self, frame):
         row = []
-        for v in range(33):
-            row.append(self.defVal)
-        if frame.pose_landmarks:
-            for normalized_landmarks in frame.pose_landmarks:
-                for i, landmarks in enumerate(normalized_landmarks):
-                    x = round(float(landmarks.x),3)
-                    y = round(float(landmarks.y),3)
-                    z = round(float(landmarks.z),3)
-                    row[i]=[x,y,z]
+        if frame.pose_world_landmarks:
+            for world_landmarks in frame.pose_world_landmarks:
+                for landmarks in world_landmarks:
+                    row.extend([round(float(landmarks.x), 3), round(float(landmarks.y), 3), round(float(landmarks.z), 3)])
+        self.data.append(row)
 
-        self.writer.writerow(row)
+    def export_to_csv(self):
+        df = pd.DataFrame(self.data, columns=self.columns)
+        df.to_csv(self.filename, index=False)
 
 
 if __name__ == "__main__":
@@ -123,23 +127,20 @@ if __name__ == "__main__":
     frame_draw = FrameDraw(cap)
     pose_detector = PoseDetector("heavy", min_detection_confidence, min_pose_presence_confidence, min_tracking_confidence, num_poses, output_segmentation_masks)
     
-    fileName = str(sys.argv[1])
+    filename_without_extension = os.path.splitext(sys.argv[1])[0]
+    filename = filename_without_extension + '.csv'
 
-    file = open( fileName +'.csv','w', newline='')
+    exporter = Exporter(filename)
     
-    export=exporter(file)
-    
-
-
     while True:
         ret,frame = cap.read()
         pose_landmarker_result = pose_detector.detectPose(frame)
 
         frame_draw.draw(frame, pose_landmarker_result)
-        export.newline(pose_landmarker_result)
+        exporter.newline(pose_landmarker_result)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
-            file.close()
+            exporter.export_to_csv()
             break
 
 

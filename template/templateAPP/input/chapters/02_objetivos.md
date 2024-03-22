@@ -1,4 +1,4 @@
-# Objectives.
+# Objectives
 
 We aim to create a way to analyze the human body that is more accessible for everyone so we can improve the lives of people who may not have easy access to doctors or specialists. The goal of this project is to make the world a better place using the technology of the future that we are starting to develop now.
 The project will start small by introducing a back problem as a means to develop the data model that will later be used for several other illnesses and even try to detect some non-physical problems using behavioral and movement-based analysis.
@@ -8,7 +8,7 @@ We don't want to substitute the medical professionals, that would be very irresp
 
 
 
-## Data obtenction via RGB camera and data validation.
+## Data obtenction via RGB camera and data validation
 
 We are going to consider the different types of cameras to be used to process the data, these cameras have different capabilities and characteristics. We are going to analyze the differences between them and we are going to see how we can make use of their data.
 In our case, we are going to use RGB cameras, which do not have depth perception by themselves, so we have to investigate how to transcribe depth to them.
@@ -19,7 +19,7 @@ In contrast to other types of cameras our choice, the RGB camera, is not a camer
 The aim of this is to help the medical field by setting a base for future development of medical applications using this type of camera, which will be very beneficial as it is the most common and and the most accessible for everyone. We think that if we come to conclusions and create a successful data model, the rgb camera will be able to be used in future research by other teams and developers. 
 This is the reason why data validation is crucial for our project. It is not only necessary for the data model but also for the future of the medical field relating to the use of common-day smartphones for medical applications.
 
-## AI model training.
+## AI model training
 
 The data that we acquire from the cameras must be processed before being used for the data model and training. Also, this will help us determine what data is useful for future deployment of applications so the load on the devices is not as hard.
 With this, we aim to create a model that will be slim and powerful as it will have only the data that we require at a certain point in time. This will allow our project to be used by everyone and everywhere as part of our aim to expand the possibilities of helping people.
@@ -29,7 +29,7 @@ That also includes different methods of hosting these AI models and the research
 
 One big part of this project is also the image recognition software that we will be using, our objective is, as we mentioned, to use RGB cameras and therefore we need an image recognition software that translates the data into 3d from a 2d capture.
 
-## Validation of the diagnostic system for the pathology of the initial case study.
+## Validation of the diagnostic system for the pathology of the initial case study
 
 With this all in mind, we want to create more than one AI model in the future using the research we have done on the way. These other AI models would be trained for different pathologies of the human body and possibly the mind. 
 

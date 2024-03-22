@@ -1,8 +1,8 @@
-# Introduction.
+# Introduction
 
 When we were first discussing the possible themes of this project, we encountered papers that talked about the possible relation between depression and movement or posture. These studies were made using the Kinect as a tool to recognize the patterns of the movement of the afflicted people @Yu2022Jun @Seifallahi2022 . This in conjunction with the sudden growth of the AI field at the moment sparked the idea that we could contribute to this field and make some development of our own. But before we get to depression there are many other problems that we could also address, one of which is very important to me as a person, back pain.
 
-## How back pain affects health.
+## How back pain affects health
 Health is a problem that never can escape us, whether we want it or not, we get sick from time to time, and illnesses are a main cause of discomfort in your day-to-day life, but for many people, it's not only a discomfort, many people have chronic illnesses that don't allow them to have a normal life, and they don't deserve it. As many experts see it two main causes of illness affect people in today's world, mental illness and back pain.
 
 As Gordon Waddell talks about in his book "The back pain revolution", back pain is a pervasive and often debilitating condition that affects millions of people worldwide, transcending age, occupation, and lifestyle. As one of the most common reasons for seeking medical attention, back pain poses a significant challenge to the well-being and functionality of individuals across diverse demographics. This book delves into the multifaceted nature of back pain, exploring its possible causes, far-reaching implications, and the profound impact it has on the daily lives of those who grapple with this condition.
@@ -19,7 +19,7 @@ Occupational demands and lifestyle choices significantly contribute to poor post
 
 This project will explore not only the physiological aspects of back pain but also its broader implications on society. By researching this condition, we aim to help the development of comprehensive strategies for prevention, management, and treatment. Through an understanding and research of back pain, we can empower individuals, healthcare professionals, and policymakers to collaborate in mitigating its impact and creating a healthier, more resilient society.
 
-## Mental issues and how they relate to posture.
+## Mental issues and how they relate to posture
 
 This project will take part in a bigger research article related also to the importance of mental illness in society.
 
@@ -31,7 +31,7 @@ The societal impact of mental illness also manifests in stigmatization, discrimi
 
 In the research this project takes part in, we aim to also establish a link between posture and movement to the discovery and prevention of mental health such as both we talked about, Alzheimer's and depression. Some articles correlate mental health symptoms to verbal but also non-verbal signs. Researchers have focused their attention on visual and linguistic indications for assessing depression. This project introduces related work on facial features, audio features, body features, and Kinect-based rehabilitation training and detection methods in particular.
 
-## Improving the medical field.
+## Improving the medical field
 
 Technology, particularly advancements in computer science, has played a crucial role in revolutionizing the medical field, enhancing patient care, and driving improvements in the healthcare system. One of the most notable contributions comes from the utilization of electronic health records, which have simplified the management and accessibility of patient information. EHRs enable doctors to access detailed and up-to-date patient records instantly, facilitating more informed decision-making and coordinated care across various medical departments. This not only improves efficiency but also reduces medical errors which leads to a better healthcare system overall.
 
