@@ -5,6 +5,9 @@ import os
 
 # Read input file
 input_data = pd.read_csv(sys.argv[1], header=0)
+#TODO hardcodear los nombres de los archivos para el make
+trueF = sys.argv[2]
+#TODO añadir a la columna 0 llamada ´label´
 
 # Prepare an empty DataFrame for output
 output = pd.DataFrame(columns=[f"{col}_max" for col in input_data.columns] +
@@ -21,6 +24,10 @@ for column_name, column_data in input_data.items():
     output.loc[0, f"{column_name}_max"] = max_val
     output.loc[0, f"{column_name}_min"] = min_val
     output.loc[0, f"{column_name}_median"] = median_val
+
+    #TODO calcular rango articular
+
+    #TODO compilar varios csv
 
 # Extract filename without extension
 filename_without_extension = os.path.splitext(sys.argv[1])[0]

@@ -25,9 +25,9 @@ df.columns = columns
 
 column_mapping = {
     "Ang_1_0_4":"Nariz",
-    "Ang_0_1_2":"ceja_izq1",    "Ang_1_2_3":"ceja_izq2",    "Ang_2_3_7":"ceja_izq2",
+    "Ang_0_1_2":"ceja_izq1",    "Ang_1_2_3":"ceja_izq2",    "Ang_2_3_7":"ceja_izq3",
     "Ang_0_4_5":"ceja_der1",    "Ang_4_5_6":"ceja_der2",    "Ang_5_6_8":"ceja_der3",
-    "Ang_12_11_13":"hombro_izq1",     "Ang_12_11_23":"hombro_izq2",    "Ang_13_11_23":"hombro_izq3",
+    "Ang_12_11_13":"hombroIzq_hombroDer_codo",     "Ang_12_11_23":"hombro_izq2",    "Ang_13_11_23":"hombro_izq3",
     "Ang_11_12_14":"hombro_der1",    "Ang_11_12_24":"hombro_der2",    "Ang_14_12_24":"hombro_der3",
     "Ang_11_13_15":"codo_izq",    "Ang_12_14_16":"codo_der",
     "Ang_13_15_17":"Muneca_izq1",    "Ang_13_15_19":"Muneca_izq2",    "Ang_13_15_21":"Muneca_izq3",    "Ang_17_15_19":"Muneca_izq4",    "Ang_17_15_21":"Muneca_izq5",    "Ang_19_15_21":"Muneca_izq6",
@@ -41,6 +41,10 @@ column_mapping = {
     "Ang_27_29_31":"puntera_izq",    "Ang_28_30_32":"puntera_der",
     "Ang_27_31_29":"tobillo_izq",    "Ang_28_32_30":"tobillo_der"
 }
+
+#TODO nombres mas descriptivos
+#right_ankle_dorsal
+#right_hip_adduction
 
 def rename_columns(df, mapping):
     df = df.rename(columns=mapping)
@@ -123,6 +127,6 @@ angles_transversal = rename_columns(angles_transversal, column_mapping)
 
 filename_without_extension = os.path.splitext(sys.argv[1])[0]
 
-angles_sagittal.to_csv(f"{filename_without_extension}_sagittal.csv", index=False)
-angles_frontal.to_csv(f"{filename_without_extension}_frontal.csv", index=False)
-angles_transversal.to_csv(f"{filename_without_extension}_transversal.csv", index=False)
+angles_sagittal.to_csv(f"{filename_without_extension}_ang_sagittal.csv", index=False)
+angles_frontal.to_csv(f"{filename_without_extension}_ang_frontal.csv", index=False)
+angles_transversal.to_csv(f"{filename_without_extension}_ang_transversal.csv", index=False)
