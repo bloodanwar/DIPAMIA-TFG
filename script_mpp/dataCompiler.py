@@ -2,35 +2,44 @@ import pandas as pd
 import numpy as np
 import sys
 import os
-
-# Read input file
-input_data = pd.read_csv(sys.argv[1], header=0)
 #TODO hardcodear los nombres de los archivos para el make
-trueF = sys.argv[2]
-#TODO añadir a la columna 0 llamada ´label´
+#TODO calcular rango articular
 
-# Prepare an empty DataFrame for output
-output = pd.DataFrame(columns=[f"{col}_max" for col in input_data.columns] +
-                      [f"{col}_min" for col in input_data.columns] +
-                      [f"{col}_median" for col in input_data.columns])
 
-# Calculate statistics for each column
-for column_name, column_data in input_data.items():
-    max_val = column_data.max()
-    min_val = column_data.min()
-    median_val = column_data.median()
+output = pd.DataFrame({"label": ["true"]})
 
-    # Add calculated values to the output DataFrame
-    output.loc[0, f"{column_name}_max"] = max_val
-    output.loc[0, f"{column_name}_min"] = min_val
-    output.loc[0, f"{column_name}_median"] = median_val
+print(f"len(sys.argv):{len(sys.argv)}")
 
-    #TODO calcular rango articular
+for i in range(len(sys.argv)-1):
+    print(f"i:{i}")
 
-    #TODO compilar varios csv
+    # Read input file
+    input_data = pd.read_csv(sys.argv[i+1], header=0)
 
-# Extract filename without extension
-filename_without_extension = os.path.splitext(sys.argv[1])[0]
+    trueF = sys.argv[2]
+
+    # Prepare an empty DataFrame for output
+    table = pd.DataFrame(columns=[f"{col}_max" for col in input_data.columns] +
+                        [f"{col}_min" for col in input_data.columns] +
+                        [f"{col}_median" for col in input_data.columns])
+
+    # Calculate statistics for each column
+    for column_name, column_data in input_data.items():
+        max_val = column_data.max()
+        min_val = column_data.min()
+        median_val = column_data.median()
+
+        # Add calculated values to the output DataFrame
+        table.loc[0, f"{column_name}_max"] = max_val
+        table.loc[0, f"{column_name}_min"] = min_val
+        table.loc[0, f"{column_name}_median"] = median_val
+
+        table = table.reset_index(drop=True)
+        output = output.reset_index(drop=True)
+        output =pd.concat([output, table], axis=1)
+
+
+
 
 # Write output DataFrame to CSV file
-output.to_csv(f"{filename_without_extension}_modelInput.csv", index=False)
+output.to_csv(f"modelInput.csv", index=False)

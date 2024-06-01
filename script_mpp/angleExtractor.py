@@ -127,6 +127,6 @@ angles_transversal = rename_columns(angles_transversal, column_mapping)
 
 filename_without_extension = os.path.splitext(sys.argv[1])[0]
 
-angles_sagittal.to_csv(f"{filename_without_extension}_ang_sagittal.csv", index=False)
-angles_frontal.to_csv(f"{filename_without_extension}_ang_frontal.csv", index=False)
-angles_transversal.to_csv(f"{filename_without_extension}_ang_transversal.csv", index=False)
+angles_sagittal.to_csv(f"./tmp/ang_sagittal.csv", index=False)
+angles_frontal.to_csv(f"./tmp/ang_frontal.csv", index=False)
+angles_transversal.to_csv(f"./tmp/ang_transversal.csv", index=False)

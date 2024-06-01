@@ -24,6 +24,8 @@ for i in range(33):
     columns.append(f"Joint_{i}_Z")
 df.columns = columns
 
+#TODO Rename maping
+
 column_mapping = {
 }
 
@@ -92,6 +94,6 @@ Len_transversal = rename_columns(Len_transversal, column_mapping)
 
 filename_without_extension = os.path.splitext(sys.argv[1])[0]
 
-Len_sagittal.to_csv(f"{filename_without_extension}_len_sagittal.csv", index=False)
-Len_frontal.to_csv(f"{filename_without_extension}_len_frontal.csv", index=False)
-Len_transversal.to_csv(f"{filename_without_extension}_len_transversal.csv", index=False)
+Len_sagittal.to_csv(f"./tmp/len_sagittal.csv", index=False)
+Len_frontal.to_csv(f"./tmp/len_frontal.csv", index=False)
+Len_transversal.to_csv(f"./tmp/len_transversal.csv", index=False)
